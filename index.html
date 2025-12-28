@@ -1719,7 +1719,7 @@
         .iconButton.isSelected .ms-Button-flexContainer, .iconButton.ms-Button:active .ms-Button-flexContainer, .iconButton.ms-Button:not(.restrictHoverAppearance):focus-visible .ms-Button-flexContainer { fill: highlighttext; background: highlight !important; }
       }
       body, html { height: 100%; }
-      body { margin: 0px; overflow: hidden; overscroll-behavior-x: none; touch-action: none; }
+      body { margin: 0px; overflow: hidden; overscroll-behavior-x: none; touch-action: auto; }
       #whiteboardRootResult { height: 100%; z-index: var(--zIndexCanvas); }
       .App { box-sizing: border-box; font-family: var(--fontFamily); font-size: var(--fontSize); overflow: hidden; position: fixed; }
       .App, .embeddedApp { height: 100%; width: 100%; }
@@ -2216,7 +2216,7 @@
       .react-transform-component { overflow: visible !important; }
       .panZoomEventReceiver { transform-origin: 0px 0px; }
       #fixedViewport { height: 100%; width: 100%; }
-      .drawingCanvas { position: fixed; clip: rect(auto, auto, auto, auto); height: 100vh; touch-action: none; width: 100vw; }
+      .drawingCanvas { position: fixed; clip: rect(auto, auto, auto, auto); height: 100vh; touch-action: auto; width: 100vw; }
       #shellHeader.showShellHeader ~ .contentViewPort .drawingCanvas { height: calc(100vh - var(--headerHeight)); }
       .wetInkContainer { position: relative; }
       .wetInk { height: 100%; left: 0px; pointer-events: none; position: absolute; top: 0px; width: 100%; }
