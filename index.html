@@ -2220,7 +2220,7 @@
       #shellHeader.showShellHeader ~ .contentViewPort .drawingCanvas { height: calc(100vh - var(--headerHeight)); }
       .wetInkContainer { position: relative; }
       .wetInk { height: 100%; left: 0px; pointer-events: none; position: absolute; top: 0px; width: 100%; }
-      .delegatedInk { touch-action: none; }
+      .delegatedInk { touch-action: auto; }
       .center { transform: translate(-50%, -50%); }
       .contentOrigin.contentOrigin.isMacOriOS-false.isClickThrough-true.anchor, .contentOrigin.contentOrigin.isMacOriOS-true.isClickThrough-true.anchor { opacity: 0.3; }
       .anchor { position: absolute; }
@@ -2232,7 +2232,7 @@
       .bottomCenter, .center, .topCenter { justify-content: center; }
       .bottomRight, .right, .topRight { justify-content: flex-end; }
       .lifted { z-index: var(--zIndexLifted); }
-      .canvasChildElement { contain: layout; touch-action: none; }
+      .canvasChildElement { contain: layout; touch-action: auto; }
       .canvasChildElement:focus { outline: none; }
       .canvasChildElement .focus-visible { outline: var(--focusOutline); outline-offset: -2px; }
       .selection { cursor: url("/blueboard/assets/Drag-Cursor.b1e74992d6395b49aab6.svg"), move; }
@@ -3053,7 +3053,7 @@
         100% { transform: translateX(2px); }
       }
       .shaking { animation: 0.35s ease 0s 1 normal none running shake; }
-      svg.inkRuler { left: 0px; overflow: hidden; pointer-events: none; position: absolute; top: 0px; touch-action: none; }
+      svg.inkRuler { left: 0px; overflow: hidden; pointer-events: none; position: absolute; top: 0px; touch-action: auto; }
       svg.inkRuler .focus-visible { outline: var(--focusOutline); }
       @media screen and (forced-colors: active) {
         .ink [fill="rgba(0,0,0,1)"], .ink [fill="rgba(31,31,31,1)"] { fill: windowtext; }
@@ -3243,7 +3243,7 @@
       .textBoxNotInteractive.empty .textbox .DraftEditor-editorContainer { display: none; }
       .textBoxInteractive, .textBoxNotInteractive { position: relative; }
       .textBoxNotInteractive, .textBoxNotInteractive.textBoxNotVisible { outline: none; }
-      .textbox.stickyNote { border: var(--stickyNoteBorder); color: var(--stickyNoteTextColor); font-family: var(--fontFamilySimple); font-weight: 700; overflow-y: hidden; touch-action: none; }
+      .textbox.stickyNote { border: var(--stickyNoteBorder); color: var(--stickyNoteTextColor); font-family: var(--fontFamilySimple); font-weight: 700; overflow-y: hidden; touch-action: auto; }
       .textbox.stickyNote.fixedFontSize { font-size: 24px; }
       .textBoxInteractive .textbox.stickyNote.fixedFontSize, .textBoxInteractive .textbox.stickyNote.minFontSize, .textBoxNotInteractive:focus .textbox.stickyNote.fixedFontSize, .textBoxNotInteractive:focus .textbox.stickyNote.minFontSize { overflow-y: auto; }
       .textBoxNotInteractive.empty:focus .textbox.stickyNote.fixedFontSize, .textBoxNotInteractive.empty:focus .textbox.stickyNote.minFontSize { overflow-y: hidden; }
@@ -3279,7 +3279,7 @@
       .textBoxBackground.lightGrayGradient { background-color: var(--noteBackgroundLightGrayColor); background-image: var(--noteBackgroundLightGrayGradient); }
       .textBoxBackground.grayGradient { background-color: var(--noteBackgroundGrayColor); background-image: var(--noteBackgroundGrayGradient); }
       .notesHCOverride { background-color: var(--noteBackgroundColorOverride); }
-      .textbox.shapeText { border: none; color: var(--stickyNoteTextColor); font-family: var(--fontFamilySimple); font-weight: 700; overflow-y: hidden; touch-action: none; }
+      .textbox.shapeText { border: none; color: var(--stickyNoteTextColor); font-family: var(--fontFamilySimple); font-weight: 700; overflow-y: hidden; touch-action: auto; }
       .textbox.shapeText .textArea { cursor: text; }
       .textbox.shapeText.fixedFontSize { font-size: 20px; }
       .textBoxInteractive .textbox.shapeText.fixedFontSize, .textBoxInteractive .textbox.shapeText.minFontSize, .textBoxNotInteractive:focus .textbox.shapeText.fixedFontSize, .textBoxNotInteractive:focus .textbox.shapeText.minFontSize { overflow-y: auto; }
